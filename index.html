@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>agro.kz.ai — Прогноз урожайности</title>
+  <meta name="description" content="Умное фермерство с прогнозом урожайности, мониторингом полей и аналитикой.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="agro.kz.ai">
+        <img src="public.avif" alt="agro.kz.ai логотип">
+      </a>
+      <nav class="menu" aria-label="Основное меню">
+        <a href="#how-it-works">Как это работает</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary" href="#feedback">Связаться</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">Точное земледелие</p>
+          <h1>Умное фермерство с прогнозом урожайности</h1>
+          <p>
+            Платформа анализирует погодные условия, состояние почвы и динамику поля,
+            чтобы вы принимали решения быстрее и с меньшими рисками.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#feedback">Оставить заявку</a>
+            <a class="btn btn-outline" href="#how-it-works">Как это работает</a>
+          </div>
+        </div>
+        <div class="hero-image card">
+          <img src="banner.avif" alt="Баннер платформы agro.kz.ai">
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <h2>Как это работает</h2>
+        <p class="section-subtitle">Простой путь от данных до понятных рекомендаций.</p>
+        <div class="grid grid-4">
+          <article class="card step">
+            <span class="step-index">1</span>
+            <h3>Сбор данных</h3>
+            <p>Погода, влажность почвы, спутниковые и полевые наблюдения.</p>
+          </article>
+          <article class="card step">
+            <span class="step-index">2</span>
+            <h3>Анализ модели</h3>
+            <p>AI определяет закономерности и прогнозирует состояние культур.</p>
+          </article>
+          <article class="card step">
+            <span class="step-index">3</span>
+            <h3>Прогноз урожая</h3>
+            <p>Получаете оценки урожайности по участкам и сезонам.</p>
+          </article>
+          <article class="card step">
+            <span class="step-index">4</span>
+            <h3>Рекомендации</h3>
+            <p>Действия по поливу, удобрениям и срокам полевых работ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section section-muted">
+      <div class="container">
+        <h2>Почему фермеры выбирают agro.kz.ai</h2>
+        <p class="section-subtitle">Повышаем предсказуемость и эффективность хозяйства.</p>
+        <div class="grid grid-3">
+          <article class="card feature">
+            <h3>Точнее планирование</h3>
+            <p>Снижайте неопределенность при планировании посевов и ресурсов.</p>
+          </article>
+          <article class="card feature">
+            <h3>Экономия ресурсов</h3>
+            <p>Оптимизируйте полив и внесение удобрений по реальной ситуации в поле.</p>
+          </article>
+          <article class="card feature">
+            <h3>Меньше рисков</h3>
+            <p>Раньше замечайте проблемные зоны и реагируйте до потерь урожая.</p>
+          </article>
+          <article class="card feature">
+            <h3>Наглядная аналитика</h3>
+            <p>Все ключевые показатели в одной панели с понятной визуализацией.</p>
+          </article>
+          <article class="card feature">
+            <h3>Быстрое внедрение</h3>
+            <p>Запуск без долгой интеграции и сложной инфраструктуры.</p>
+          </article>
+          <article class="card feature">
+            <h3>Поддержка команды</h3>
+            <p>Помогаем адаптировать модель под ваш регион и тип культур.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback" class="section cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Готовы повысить урожайность?</h2>
+          <p>Оставьте заявку, и мы свяжемся с вами. Данные придут в Telegram.</p>
+        </div>
+
+        <form id="feedbackForm" class="feedback-form" novalidate>
+          <label>
+            <span>Имя</span>
+            <input type="text" name="name" placeholder="Ваше имя" required minlength="2">
+          </label>
+          <label>
+            <span>Телефон</span>
+            <input type="tel" name="phone" placeholder="+7 700 000 00 00" required>
+          </label>
+          <label>
+            <span>Сообщение</span>
+            <textarea name="message" placeholder="Коротко опишите задачу" rows="3"></textarea>
+          </label>
+          <button type="submit" class="btn btn-light">Отправить</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-muted">
+      <div class="container faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <details class="card">
+          <summary>Сколько времени занимает внедрение?</summary>
+          <p>Базовый запуск обычно занимает от 2 до 7 дней в зависимости от входных данных.</p>
+        </details>
+        <details class="card">
+          <summary>Нужны ли специальные датчики?</summary>
+          <p>Нет, можно стартовать на погодных и спутниковых данных и расширяться позже.</p>
+        </details>
+        <details class="card">
+          <summary>Можно ли адаптировать модель под регион?</summary>
+          <p>Да, модель адаптируется под климат, культуру и тип почвы конкретного хозяйства.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="public.avif" alt="agro.kz.ai логотип">
+        <p>Цифровая платформа для точного земледелия.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#how-it-works">Как это работает</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#feedback">Обратная связь</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
